@@ -3,7 +3,7 @@
  * Plugin Name: HYP Evaluare Produs
  * Plugin URI: https://github.com/hypericumimpex/hyp-evaluare-produs/
  * Description: <code><strong>HYP Evaluare Produs</strong></code> extends the basic functionality of woocommerce reviews and add a histogram table to the reviews of your products, such as you see in most trendy e-commerce sites.
- * Version: 1.5.5
+ * Version: 1.5.6
  * Author: Romeo C.
  * Author URI: https://romeocovaci.com/
  * Text Domain: yith-woocommerce-advanced-reviews
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 defined( 'YITH_YWAR_INIT' ) || define( 'YITH_YWAR_INIT', plugin_basename( __FILE__ ) );
 defined( 'YITH_YWAR_SLUG' ) || define( 'YITH_YWAR_SLUG', 'yith-woocommerce-advanced-reviews' );
 defined( 'YITH_YWAR_SECRET_KEY' ) || define( 'YITH_YWAR_SECRET_KEY', 'wbJGFwHx426IS4V4vYeB' );
-defined( 'YITH_YWAR_VERSION' ) || define( 'YITH_YWAR_VERSION', '1.5.5' );
+defined( 'YITH_YWAR_VERSION' ) || define( 'YITH_YWAR_VERSION', '1.5.6' );
 defined( 'YITH_YWAR_PREMIUM' ) || define( 'YITH_YWAR_PREMIUM', '1' );
 defined( 'YITH_YWAR_FILE' ) || define( 'YITH_YWAR_FILE', __FILE__ );
 defined( 'YITH_YWAR_DIR' ) || define( 'YITH_YWAR_DIR', plugin_dir_path( __FILE__ ) );

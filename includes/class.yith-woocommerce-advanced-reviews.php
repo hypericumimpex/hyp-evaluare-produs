@@ -137,9 +137,6 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 			// Load Plugin Framework
 			add_action( 'plugins_loaded', array( $this, 'plugin_fw_loader' ), 15 );
 
-			//  Add row meta
-			add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
-
 			//  Add stylesheets and scripts files
 			add_action( 'admin_menu', array( $this, 'register_panel' ), 5 );
 
@@ -148,13 +145,6 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 
 			//  verify import reviews action request
 			add_action( "admin_init", array( $this, "check_import_actions" ) );
-
-
-			//Add action links
-			add_filter( 'plugin_action_links_' . plugin_basename( YITH_YWAR_DIR . '/' . basename( YITH_YWAR_FILE ) ), array(
-				$this,
-				'action_links',
-			) );
 
 			add_action( 'yith_advanced_reviews_premium', array( $this, 'premium_tab' ) );
 
@@ -267,6 +257,10 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 			 * Manage the changes to product's reviews
 			 */
 			add_action( 'yith_ywar_product_reviews_updated', array( $this, 'manage_product_reviews_update' ) );
+
+            /* === Show Plugin Information === */
+            add_filter( 'plugin_action_links_' . plugin_basename( YITH_YWAR_DIR . '/' . basename( YITH_YWAR_FILE ) ), array( $this, 'action_links' ) );
+            add_filter( 'yith_show_plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 5 );
 
 		}
 
@@ -650,89 +644,6 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 					require_once( $plugin_fw_file );
 				}
 			}
-		}
-
-		/**
-		 * plugin_row_meta
-		 *
-		 * add the action links to plugin admin page
-		 *
-		 * @param array $plugin_meta
-		 * @param       $plugin_file
-		 * @param       $plugin_data
-		 * @param       $status
-		 *
-		 * @return   array
-		 * @since    1.0
-		 * @author   Andrea Grillo <andrea.grillo@yithemes.com>
-		 * @use      plugin_row_meta
-		 */
-		public function plugin_row_meta( $plugin_meta, $plugin_file, $plugin_data, $status, $init_file = 'YITH_YWAR_INIT' ) {
-
-            $to_add = array();
-            if ( defined( $init_file ) && constant( $init_file ) == $plugin_file ) {
-                $to_add[] = array(
-                    'label' => _x( 'Live Demo', 'Plugin Row Meta', 'yith-woocommerce-advanced-reviews' ),
-                    'url'   => $this->_premium_live,
-                    'icon'  => 'dashicons  dashicons-laptop',
-                );
-
-                $to_add[] = array(
-                    'label' => _x( 'Documentation', 'Plugin Row Meta', 'yith-woocommerce-advanced-reviews' ),
-                    'url'   => $this->_official_documentation,
-                    'icon'  => 'dashicons  dashicons-search',
-                );
-
-                $to_add[] = array(
-                    'label' => __( 'Support', 'Plugin Row Meta', 'yith-woocommerce-advanced-reviews' ),
-                    'url'   => $this->_support,
-                    'icon'  => 'dashicons  dashicons-admin-users',
-                );
-            }
-
-            if ( defined( 'YITH_YWAR_FREE_INIT' ) && YITH_YWAR_FREE_INIT == $plugin_file ) {
-                $to_add[] = array(
-                    'label' => __( 'Premium version', 'Plugin Row Meta', 'yith-woocommerce-advanced-reviews' ),
-                    'url'   => $this->get_premium_landing_uri(),
-                    'icon'  => 'dashicons  dashicons-cart',
-                );
-            }
-
-            foreach ( $to_add as $row_meta ){
-                $plugin_meta[] = sprintf( '<a href="%s" target="_blank"><span class="%s"></span>%s</a>', $row_meta['url'], $row_meta['icon'], $row_meta['label'] );
-            }
-
-            return $plugin_meta;
-
-        }
-
-		/**
-		 * Action Links
-		 *
-		 * add the action links to plugin admin page
-		 *
-		 * @param $links | links plugin array
-		 *
-		 * @return   mixed Array
-		 * @since    1.0
-		 * @author   Andrea Grillo <andrea.grillo@yithemes.com>
-		 * @return mixed
-		 * @use      plugin_action_links_{$plugin_file_name}
-		 */
-		public function action_links( $links ) {
-
-            $links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'yith-woocommerce-advanced-reviews' ) . '</a>';
-
-            if ( defined( 'YITH_YWAR_FREE_INIT' ) ) {
-                $links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'yith-woocommerce-advanced-reviews' ) . '</a>';
-            }
-
-            if( ! defined( 'YITH_YWAR_FREE_INIT' ) && class_exists( 'YIT_Plugin_Licence' ) ){
-                $links[] = sprintf( '<a href="%s">%s</a>', YIT_Plugin_Licence::get_license_activation_url(),__( 'License',  'yith-woocommerce-advanced-reviews' ) );
-            }
-
-            return $links;
-
 		}
 
 		public function register_pointer() {
@@ -2312,5 +2223,33 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 				wp_redirect( esc_url( remove_query_arg( "convert-reviews" ) ) );
 			}
 		}
+
+        /**
+         * Action links
+         *
+         *
+         * @return void
+         * @since    1.2.3
+         * @author   Carlos Rodríguez <carlos.rodriguez@youirinspiration.it>
+         */
+        public function action_links( $links ) {
+            $links = yith_add_action_links( $links, $this->_panel_page, false );
+            return $links;
+        }
+        /**
+         * Plugin Row Meta
+         *
+         *
+         * @return void
+         * @since    1.2.3
+         * @author   Carlos Rodríguez <carlos.rodriguez@youirinspiration.it>
+         */
+        public function plugin_row_meta( $new_row_meta_args, $plugin_meta, $plugin_file, $plugin_data, $status, $init_file = 'YITH_YWAR_FREE_INIT' ) {
+            if ( defined( $init_file ) && constant( $init_file ) == $plugin_file ) {
+                $new_row_meta_args['slug'] = 'yith-woocommerce-advanced-reviews';
+            }
+
+            return $new_row_meta_args;
+        }
 	}
 }

@@ -2570,4 +2570,34 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
             }
         }
     }
+
+    /**
+     * Action links
+     *
+     *
+     * @return void
+     * @since    1.2.3
+     * @author   Carlos Rodríguez <carlos.rodriguez@youirinspiration.it>
+     */
+    public function action_links( $links ) {
+        $links = yith_add_action_links( $links, $this->_panel_page, true );
+        return $links;
+    }
+    /**
+     * Plugin Row Meta
+     *
+     *
+     * @return void
+     * @since    1.2.3
+     * @author   Carlos Rodríguez <carlos.rodriguez@youirinspiration.it>
+     */
+    public function plugin_row_meta( $new_row_meta_args, $plugin_meta, $plugin_file, $plugin_data, $status, $init_file = 'YITH_YWAR_INIT' ) {
+        $new_row_meta_args = parent::plugin_row_meta( $new_row_meta_args, $plugin_meta, $plugin_file, $plugin_data, $status, $init_file );
+
+        if ( defined( $init_file ) && constant( $init_file ) == $plugin_file ){
+            $new_row_meta_args['is_premium'] = true;
+        }
+
+        return $new_row_meta_args;
+    }
 }
