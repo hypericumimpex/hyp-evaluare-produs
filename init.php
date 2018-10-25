@@ -2,7 +2,7 @@
 /**
  * Plugin Name: HYP Evaluare Produs
  * Plugin URI: https://github.com/hypericumimpex/hyp-evaluare-produs/
- * Description: <code><strong>HYP Evaluare Produs</strong></code> extends the basic functionality of woocommerce reviews and add a histogram table to the reviews of your products, such as you see in most trendy e-commerce sites.
+ * Description: <code><strong>HYP Evaluare Produs</strong></code>extinde funcționalitatea de bază a comentariilor, adaugă evaluarea produs.
  * Version: 1.5.6
  * Author: Romeo C.
  * Author URI: https://romeocovaci.com/
