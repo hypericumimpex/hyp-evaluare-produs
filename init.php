@@ -3,9 +3,9 @@
  * Plugin Name: HYP Evaluare Produs
  * Plugin URI: https://github.com/hypericumimpex/hyp-evaluare-produs/
  * Description: <code><strong>HYP Evaluare Produs</strong></code>extinde funcționalitatea de bază a comentariilor, adaugă evaluarea produs.
- * Version: 1.5.6
+ * Version: 1.5.7
  * Author: Romeo C.
- * Author URI: https://romeocovaci.com/
+ * Author URI: https://github.com/hypericumimpex/
  * Text Domain: yith-woocommerce-advanced-reviews
  * Domain Path: /languages/
  * WC requires at least: 3.0.0
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 defined( 'YITH_YWAR_INIT' ) || define( 'YITH_YWAR_INIT', plugin_basename( __FILE__ ) );
 defined( 'YITH_YWAR_SLUG' ) || define( 'YITH_YWAR_SLUG', 'yith-woocommerce-advanced-reviews' );
 defined( 'YITH_YWAR_SECRET_KEY' ) || define( 'YITH_YWAR_SECRET_KEY', 'wbJGFwHx426IS4V4vYeB' );
-defined( 'YITH_YWAR_VERSION' ) || define( 'YITH_YWAR_VERSION', '1.5.6' );
+defined( 'YITH_YWAR_VERSION' ) || define( 'YITH_YWAR_VERSION', '1.5.7' );
 defined( 'YITH_YWAR_PREMIUM' ) || define( 'YITH_YWAR_PREMIUM', '1' );
 defined( 'YITH_YWAR_FILE' ) || define( 'YITH_YWAR_FILE', __FILE__ );
 defined( 'YITH_YWAR_DIR' ) || define( 'YITH_YWAR_DIR', plugin_dir_path( __FILE__ ) );

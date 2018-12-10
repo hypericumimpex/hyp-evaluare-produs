@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
 
     $('#do_uploadFile').click(function () {
         $('#ywar-uploadFile').click();
-    })
+    });
 
     $('#ywar-uploadFile').on('change', function () {
         $('.ywar-attachment-notice').remove();
@@ -78,12 +78,12 @@ jQuery(document).ready(function ($) {
             }
         }
         return true;
-    }
+    };
 
     // Prevent submission if limit is exceeded.
     $('#commentform').submit(function () {
         var input = document.getElementById("ywar-uploadFile");
-        if ((attach.limit_multiple_upload > 0) && (input.files.length > attach.limit_multiple_upload))
+        if ( input != null && (attach.limit_multiple_upload > 0) && (input.files.length > attach.limit_multiple_upload))
             return false;
     });
 });

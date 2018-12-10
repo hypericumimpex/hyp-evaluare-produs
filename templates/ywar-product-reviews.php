@@ -27,7 +27,7 @@ if ( ! comments_open ( $product_id ) ) {
     return;
 }
 
-$YWAR_AdvancedReview = yith_advanced_reviews_instance ();
+$YWAR_AdvancedReview = YITH_YWAR ();
 $reviews_count       = $YWAR_AdvancedReview->get_product_reviews_by_rating ( $product_id );
 ?>
 <?php do_action ( 'yith_advanced_reviews_before_reviews' ); ?>

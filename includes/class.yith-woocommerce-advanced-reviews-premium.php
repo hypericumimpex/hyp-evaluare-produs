@@ -2157,10 +2157,18 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
 			$str_stars              = _n( 'star', 'stars', $stars, 'yith-woocommerce-advanced-reviews' );
 
 			$filtered_reviews_count = $this->get_product_reviews_by_rating( $product_id, $stars );
-			$reviews_title          = '<h3 class="ywar_review_list">' . sprintf( __( '%d reviews with rate of %d %s (%d of %d)', 'yith-woocommerce-advanced-reviews' ),
-					$filtered_reviews_count, $stars, $str_stars, $filtered_reviews_count, $unfiltered_reviews_count ) . '</h3>';
+			$reviews_title          = '<h3 class="ywar_review_list">' . apply_filters(
+                    'yith_advanced_reviews_reviews_title_text',
+                    sprintf( __( '%d reviews with rate of %d %s (%d of %d)', 'yith-woocommerce-advanced-reviews' ), $filtered_reviews_count, $stars, $str_stars, $filtered_reviews_count, $unfiltered_reviews_count ),
+                    array(
+                        "stars" => $stars,
+                        "str_stars" => $str_stars,
+                        "filtered_reviews_count" => $filtered_reviews_count,
+                        "unfiltered_reviews_count" => $unfiltered_reviews_count
+                    )
+                ) . '</h3>';
 
-			$reviews_title .= "<a href=\"$return_path\" class=\"ywar_filter_reviews\" data-id_product=\"$product_id\" data-stars=\"0\">" . __( '(Show unfiltered results)', 'yith-woocommerce-advanced-reviews' ) . "</a><hr>";
+            $reviews_title .= "<a href=\"$return_path\" class=\"ywar_filter_reviews\" data-id_product=\"$product_id\" data-stars=\"0\">" . __( '(Show unfiltered results)', 'yith-woocommerce-advanced-reviews' ) . "</a><hr>";
 		}
 
 		$show_more_link = '';

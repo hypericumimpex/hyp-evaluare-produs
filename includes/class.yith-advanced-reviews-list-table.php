@@ -31,7 +31,7 @@ if ( ! class_exists( 'YITH_Advanced_Reviews_List_Table' ) ) {
 		 */
 		public function __construct() {
 
-			$this->ywar = yith_advanced_reviews_instance();
+			$this->ywar = YITH_YWAR();
 			//Set parent defaults
 			parent::__construct( array(
 					'singular' => 'review', //singular name of the listed records

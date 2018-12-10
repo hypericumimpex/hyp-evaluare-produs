@@ -660,9 +660,8 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 				'screen_id'  => 'plugins',
 				'pointer_id' => 'yith_ywar_panel',
 				'target'     => '#toplevel_page_yit_plugin_panel',
-				'content'    => sprintf( '<h3> %s </h3> <p> %s </p>',
-					__( 'YITH WooCommerce Advanced Reviews', 'yith-woocommerce-advanced-reviews' ),
-					__( 'In YIT Plugins tab you can find YITH WooCommerce Advanced Reviews options. From this menu you can access all settings of YITH plugins activated.', 'yith-woocommerce-advanced-reviews' ) . '<br>' . $premium_message
+				'content'    => sprintf( '<h3>YITH WooCommerce Advanced Reviews</h3> <p> %s </p>',
+					__( 'In YITH tab you can find YITH WooCommerce Advanced Reviews options. From this menu you can access all settings of YITH plugins activated.', 'yith-woocommerce-advanced-reviews' ) . '<br>' . $premium_message
 				),
 				'position'   => array( 'edge' => 'left', 'align' => 'center' ),
 				'init'       => defined( 'YITH_YWAR_PREMIUM' ) ? YITH_YWAR_INIT : YITH_YWAR_FREE_INIT,
@@ -672,9 +671,8 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 				'screen_id'  => 'update',
 				'pointer_id' => 'yith_ywar_panel',
 				'target'     => '#toplevel_page_yit_plugin_panel',
-				'content'    => sprintf( '<h3> %s </h3> <p> %s </p>',
-					__( 'YITH WooCommerce Advanced Reviews', 'yith-woocommerce-advanced-reviews' ),
-					__( 'From now on, you can find all YITH WooCommerce Advanced Reviews options in YIT Plugin -> Advanced Reviews instead of WooCommerce -> Settings -> Advanced Reviews, as in the previous version. Any time one of our plugins is updated, a new entry will be added to this menu.', 'yith-woocommerce-advanced-reviews' ) . $premium_message
+				'content'    => sprintf( '<h3>YITH WooCommerce Advanced Reviews</h3> <p> %s </p>',
+					__( 'From now on, you can find all YITH WooCommerce Advanced Reviews options in YITH -> Advanced Reviews instead of WooCommerce -> Settings -> Advanced Reviews, as in the previous version. Any time one of our plugins is updated, a new entry will be added to this menu.', 'yith-woocommerce-advanced-reviews' ) . $premium_message
 				),
 				'position'   => array( 'edge' => 'left', 'align' => 'center' ),
 				'init'       => defined( 'YITH_YWAR_PREMIUM' ) ? YITH_YWAR_INIT : YITH_YWAR_FREE_INIT,
@@ -1556,7 +1554,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 			global $product;
 
 			if ( isset( $tabs['reviews'] ) ) {
-				$tabs['reviews']['title'] = sprintf( __( apply_filters( 'yith_ywar_reviews_tab_title', 'Reviews' ) . ' (%d)', 'yith-woocommerce-advanced-reviews' ), $this->get_product_reviews_by_rating( yit_get_prop( $product, 'id' ) ) );
+				$tabs['reviews']['title'] = sprintf( __( 'Reviews (%d)' , 'yith-woocommerce-advanced-reviews' ), $this->get_product_reviews_by_rating( yit_get_prop( $product, 'id' ) ) );
 			}
 
 			return $tabs;
@@ -1914,7 +1912,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Advanced_Reviews' ) ) {
 
 			$rating = $this->get_average_rating( yit_get_prop( $product, 'id' ) );
 
-			if ( $rating > 0 ) {
+			if ( apply_filters( 'yith_ywar_display_rating_stars_condition', $rating > 0, $rating ) ) {
 
 				$rating_html =
 					'<div class="star-rating" title="' . sprintf( __( 'Rated %s out of 5', 'yith-woocommerce-advanced-reviews' ), $rating ) . '">

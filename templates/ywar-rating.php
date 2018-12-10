@@ -3,7 +3,7 @@
  * Single Product Rating
  *
  * @author      Yithemes
- * @version 3.1.0
+ * @version     1.2.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-$YWAR_AdvancedReview = yith_advanced_reviews_instance();
+$YWAR_AdvancedReview = YITH_YWAR();
 
 if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' ) {
     return;
@@ -20,7 +20,7 @@ $product_id = yit_get_prop($product, 'id');
 $rating_count = $review_count = count( $YWAR_AdvancedReview->get_product_reviews( $product_id ) );
 $average      = $YWAR_AdvancedReview->get_average_rating( $product_id );
 
-if ( $rating_count > 0 ) : ?>
+if ( apply_filters( 'yith_ywar_display_rating_stars_condition', $rating_count > 0, $rating_count ) ) : ?>
     <div class="woocommerce-product-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
         <div class="star-rating" title="<?php printf( __( 'Rated %s out of 5', 'yith-woocommerce-advanced-reviews' ), $average ); ?>">
 			<span style="width:<?php echo( ( $average / 5 ) * 100 ); ?>%">
