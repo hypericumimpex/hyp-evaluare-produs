@@ -28,7 +28,7 @@ if ( ! comments_open ( $product_id ) ) {
 }
 
 $YWAR_AdvancedReview = YITH_YWAR ();
-$reviews_count       = $YWAR_AdvancedReview->get_product_reviews_by_rating ( $product_id );
+$reviews_count = is_array($YWAR_AdvancedReview->get_product_reviews_by_rating( $product_id )) || is_object($YWAR_AdvancedReview->get_product_reviews_by_rating( $product_id )) ? count( $YWAR_AdvancedReview->get_product_reviews_by_rating( $product_id ) ) : $YWAR_AdvancedReview->get_product_reviews_by_rating( $product_id );
 ?>
 <?php do_action ( 'yith_advanced_reviews_before_reviews' ); ?>
 
@@ -49,8 +49,7 @@ $reviews_count       = $YWAR_AdvancedReview->get_product_reviews_by_rating ( $pr
             <?php do_action ( 'yith_advanced_reviews_before_review_list', $product ); ?>
 
             <ol class="commentlist">
-                <?php YITH_YWAR()->reviews_list ( $product_id,
-                    apply_filters ( 'yith_advanced_reviews_reviews_list', null, $product_id ), true ); ?>
+                <?php YITH_YWAR()->reviews_list( $product_id, apply_filters ( 'yith_advanced_reviews_reviews_list', null, $product_id ), true ); ?>
             </ol>
 
             <?php do_action ( 'yith_advanced_reviews_after_review_list', $product ); ?>

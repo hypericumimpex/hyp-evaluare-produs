@@ -3,13 +3,30 @@
 Contributors: yithemes
 Tags: reviews, woocommerce, products, themes, yit, yith, e-commerce, shop, advanced reviews, reviews attachments, rating summary, product comment, review replies, advanced comments, product comments, vote review, vote comment, amazon, amazon style, amazon reviews, review report, review reports, most voted reviews, best reviews, rate review, rate product
 Requires at least: 4.0.0
-Tested up to: 5.0.x
-Stable tag: 1.5.7
+Tested up to: 5.1.x
+Stable tag: 1.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://docs.yithemes.com/yith-woocommerce-advanced-reviews/
 
 == Changelog ==
+
+= Version 1.6.0 - Released: Feb 25, 2019 =
+
+* New: added a bubble notification in the backend when a new review or reply is added
+* Tweak: improving the plugin performance
+* Update: updated Dutch language
+* Update: updated Spanish language
+* Update: updated template ywar-rating.php
+* Update: updated plugin Framework
+* Update: Update template version in order to prevent notice on WooCommerce status
+* Update: main language file
+* Fix: count notice getting Review count value
+* Fix: wrong format for dutch language files
+* Fix: fixed a non numeric value warning
+* Fix: Fixed reCaptcha condition, it was working on admin panel.
+* Dev: added new filter yith_advanced_reviews_allow_reply_condition
+
 
 = Version 1.5.7 - Released: Dec 07, 2018 =
 

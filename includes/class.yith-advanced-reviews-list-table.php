@@ -207,6 +207,7 @@ if ( ! class_exists( 'YITH_Advanced_Reviews_List_Table' ) ) {
 
 						// Update the post into the database
 						wp_update_post( $my_post );
+                        yith_ywar_notify_review_update( $review_id );
 					}
 
 					break;
@@ -220,6 +221,7 @@ if ( ! class_exists( 'YITH_Advanced_Reviews_List_Table' ) ) {
 
 						// Update the post into the database
 						wp_update_post( $my_post );
+                        yith_ywar_notify_review_update( $review_id );
 					}
 
 					break;
@@ -227,6 +229,7 @@ if ( ! class_exists( 'YITH_Advanced_Reviews_List_Table' ) ) {
 				case 'delete' :
 					foreach ( $_GET['reviews'] as $review_id ) {
 						wp_delete_post( $review_id );
+                        yith_ywar_notify_review_update( $review_id );
 					}
 
 					break;
@@ -457,15 +460,16 @@ if ( ! class_exists( 'YITH_Advanced_Reviews_List_Table' ) ) {
 				case YITH_YWAR_TABLE_COLUMN_REVIEW_RATING:
 					if ( 0 == $post->post_parent ) {
 						$rating = get_post_meta( $post->ID, YITH_YWAR_META_KEY_RATING, true );
+
+						if ( $rating ){
 						?>
 						<div class="woocommerce">
 							<div class="star-rating"
 							     title="<?php echo sprintf( __( "Rated %d out of 5", 'yith-woocommerce-advanced-reviews' ), $rating ); ?>">
-                                <span
-	                                style="width:<?php echo ( ( $rating / 5 ) * 100 ) . '%'; ?>"><strong><?php echo $rating; ?></strong><?php _e( "out of 5", 'yith-woocommerce-advanced-reviews' ); ?></span>
+                                <span style="width:<?php echo ( ( $rating / 5 ) * 100 ) . '%'; ?>"><strong><?php echo $rating; ?></strong><?php _e( "out of 5", 'yith-woocommerce-advanced-reviews' ); ?></span>
 							</div>
 						</div>
-						<?php
+						<?php }
 					}
 
 					break;

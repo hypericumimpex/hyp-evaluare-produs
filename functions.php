@@ -29,6 +29,7 @@ defined ( 'YITH_YWAR_META_REVIEW_BLOCK_EDIT' ) || define ( 'YITH_YWAR_META_REVIE
 
 defined ( 'YITH_YWAR_ACTION_APPROVE_REVIEW' ) || define ( 'YITH_YWAR_ACTION_APPROVE_REVIEW', 'approve-review' );
 defined ( 'YITH_YWAR_ACTION_UNTRASH_REVIEW' ) || define ( 'YITH_YWAR_ACTION_UNTRASH_REVIEW', 'untrash-review' );
+defined ( 'YITH_YWAR_ACTION_TRASH_REVIEW' ) || define ( 'YITH_YWAR_ACTION_TRASH_REVIEW', 'trash' );
 defined ( 'YITH_YWAR_ACTION_UNAPPROVE_REVIEW' ) || define ( 'YITH_YWAR_ACTION_UNAPPROVE_REVIEW', 'unapprove-review' );
 
 defined ( 'YITH_YWAR_TABLE_COLUMN_REVIEW_CONTENT' ) || define ( 'YITH_YWAR_TABLE_COLUMN_REVIEW_CONTENT', 'review-text' );

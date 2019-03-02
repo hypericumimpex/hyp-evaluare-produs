@@ -2,8 +2,8 @@
 /**
  * Single Product Rating
  *
- * @author      Yithemes
- * @version     1.2.0
+ * @author      YITH
+ * @version     3.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,8 +16,12 @@ $YWAR_AdvancedReview = YITH_YWAR();
 if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' ) {
     return;
 }
+
 $product_id = yit_get_prop($product, 'id');
-$rating_count = $review_count = count( $YWAR_AdvancedReview->get_product_reviews( $product_id ) );
+
+$review_count = $YWAR_AdvancedReview->get_reviews_count( $product_id );
+
+$rating_count = $review_count;
 $average      = $YWAR_AdvancedReview->get_average_rating( $product_id );
 
 if ( apply_filters( 'yith_ywar_display_rating_stars_condition', $rating_count > 0, $rating_count ) ) : ?>
