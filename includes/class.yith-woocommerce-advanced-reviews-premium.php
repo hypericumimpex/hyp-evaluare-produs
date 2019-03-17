@@ -1660,8 +1660,8 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
                     ( 'yes' === get_option( 'woocommerce_review_rating_required' ) ),
                 'tab_selector'          => get_option( 'ywar_tab_selector', '#tab-reviews' ),
             ) );
-
-        if ( $this->recaptcha_enabled ) {
+            
+        if ( $this->recaptcha_enabled === 'yes' ) {
             //  Enqueue reCaptcha script on need
             wp_enqueue_script(
                 "ywar-recaptcha",
@@ -2278,10 +2278,12 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
             'order'            => $args['order'],
             'meta_key'         => $args['meta_key'],
             'post_type'        => YITH_YWAR_POST_TYPE,
-            'meta_query'  => $args['meta_query'],
+            'post_parent'      => 0,
+            'meta_query'       => $args['meta_query'],
         );
-
+        
         $reviews_aux = get_posts( $args);
+        $args['offset'] = !empty($args['offset']) ? $args['offset'] : 0;
 
         $featured_reviews = array();
         $no_featured_reviews = array();

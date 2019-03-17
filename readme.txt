@@ -4,12 +4,23 @@ Contributors: yithemes
 Tags: reviews, woocommerce, products, themes, yit, yith, e-commerce, shop, advanced reviews, reviews attachments, rating summary, product comment, review replies, advanced comments, product comments, vote review, vote comment, amazon, amazon style, amazon reviews, review report, review reports, most voted reviews, best reviews, rate review, rate product
 Requires at least: 4.0.0
 Tested up to: 5.1.x
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://docs.yithemes.com/yith-woocommerce-advanced-reviews/
 
 == Changelog ==
+
+= Version 1.6.1 - Released: Mar 15, 2019 =
+
+* Update: updated plugin Framework
+* Update: language file .pot
+* Fix: deleted the call to the reviews_list function in the product reviews template
+* Fix: Don't display the replies as a reviews in the reviews list
+* Fix: fixed the name of the Dutch translation files
+* Fix: include Recaptcha scripts only when the module is enabled
+* Fix: Fixed warning when offset of review doesn't exists.
+* Fix: fixed an error that appear in the Google SDTT
 
 = Version 1.6.0 - Released: Feb 25, 2019 =
 

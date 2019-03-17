@@ -103,4 +103,7 @@ if ( $user ) {
 
 		</div>
 	</div>
+    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+        <!-- Product properties -->
+    </div>
 </li>

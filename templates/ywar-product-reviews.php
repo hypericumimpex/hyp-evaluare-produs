@@ -49,7 +49,7 @@ $reviews_count = is_array($YWAR_AdvancedReview->get_product_reviews_by_rating( $
             <?php do_action ( 'yith_advanced_reviews_before_review_list', $product ); ?>
 
             <ol class="commentlist">
-                <?php YITH_YWAR()->reviews_list( $product_id, apply_filters ( 'yith_advanced_reviews_reviews_list', null, $product_id ), true ); ?>
+
             </ol>
 
             <?php do_action ( 'yith_advanced_reviews_after_review_list', $product ); ?>
