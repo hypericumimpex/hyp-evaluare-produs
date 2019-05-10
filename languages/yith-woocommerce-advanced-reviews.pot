@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Advanced Reviews Premium 1.6.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
-"POT-Creation-Date: 2019-03-15 10:40:53+00:00\n"
+"POT-Creation-Date: 2019-03-27 09:56:57+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -194,7 +194,7 @@ msgid "By max rate"
 msgstr ""
 
 #: includes/class.yith-woocommerce-advanced-reviews-premium.php:800
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2106
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2119
 msgid "Impossible to filter by rate"
 msgstr ""
 
@@ -251,122 +251,122 @@ msgstr ""
 msgid "Edit to a previous review"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1466
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1479
 msgid "Was this review helpful to you?"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1467
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1480
 msgid "This reviews is helpful"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1468
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1481
 msgid "This reviews is not helpful"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1495
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1508
 msgid "Most recent reviews"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1496
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1509
 msgid "Most helpful reviews"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1537
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1550
 msgid "Reviews with %s star"
 msgid_plural "Reviews with %s stars"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1568
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2168
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1581
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2181
 msgid "star"
 msgid_plural "stars"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1569
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1582
 msgid "%d reviews with rating of %s %s (%s of %s)"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1571
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2182
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1584
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2195
 msgid "(Show unfiltered results)"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1627
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1640
 msgctxt "The user tried to upload more files than allowed."
 msgid "Too many files selected!"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1628
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1641
 msgctxt "The user tried to upload files with extension or size not allowed."
 msgid ""
 "One or more file was not accepted because do not match the expected "
 "requirements"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1629
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1642
 msgctxt "No attachment is selected"
 msgid "No Files Selected"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1654
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1667
 msgid "Please, write a review"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1655
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1668
 msgid "Please, select a rating before submitting your review"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1656
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1669
 msgid "Edit review"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1657
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1670
 #: plugin-options/premium-options.php:113
 msgid "Reply to review"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1658
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1671
 #: templates/ywar-product-reviews.php:76
 msgid "Add a review"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1963
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1976
 msgid "Thanks for your message, we will check the content of the review."
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2027
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2040
 msgid "%s of %s people found this review helpful"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2075
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2088
 msgid "Product ID is not valid"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2083
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2216
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2096
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2229
 msgid "Product ID is in an invalid format"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2173
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2186
 msgid "%d reviews with rate of %d %s (%d of %d)"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2523
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2536
 #: plugin-options/premium-options.php:67
 msgid ""
 "Only allow one review for a product. Require \"Only allow reviews from "
 "verified owners\" to be set to work properly"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2552
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2565
 msgid ""
 "You can't add more than one review for this product. Would you like to edit "
 "the review you have already written?"
 msgstr ""
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2599
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2612
 msgid ""
 "Bots are not allowed to submit comments. If you are not a bot then please "
 "enable JavaScript in browser."

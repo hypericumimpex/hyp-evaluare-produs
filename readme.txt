@@ -4,12 +4,22 @@ Contributors: yithemes
 Tags: reviews, woocommerce, products, themes, yit, yith, e-commerce, shop, advanced reviews, reviews attachments, rating summary, product comment, review replies, advanced comments, product comments, vote review, vote comment, amazon, amazon style, amazon reviews, review report, review reports, most voted reviews, best reviews, rate review, rate product
 Requires at least: 4.0.0
 Tested up to: 5.1.x
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Documentation: https://docs.yithemes.com/yith-woocommerce-advanced-reviews/
 
 == Changelog ==
+
+= Version 1.6.2 - Released: Apr 09, 2019 =
+
+* New: support to WooCommerce 3.6.0 RC 1
+* Update: updated plugin Framework
+* Update: language file .pot
+* Update: Updated Dutch language
+* Update: Updated Spanish language
+* Fix: check the thumbs id in the attachment section
+* Fix: Fixed showing all features reviews.
 
 = Version 1.6.1 - Released: Mar 15, 2019 =
 

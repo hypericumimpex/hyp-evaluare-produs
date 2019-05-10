@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YIT WooCommerce Advanced Reviews\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
-"POT-Creation-Date: 2018-12-18 09:34:01+00:00\n"
-"PO-Revision-Date: 2018-12-18 11:18+0100\n"
+"POT-Creation-Date: 2019-03-27 09:56:57+00:00\n"
+"PO-Revision-Date: 2019-03-27 09:58+0000\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
 "Language: es_ES\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
 
-#: functions.php:89
+#: functions.php:90
 msgid ""
 "YITH WooCommerce Advanced Reviews is enabled but not effective. It requires "
 "WooCommerce in order to work."
@@ -29,7 +29,7 @@ msgstr ""
 "Requiere WooCommerce para funcionar."
 
 #: includes/class.yith-advanced-reviews-list-table.php:53
-#: includes/class.yith-woocommerce-advanced-reviews.php:1705
+#: includes/class.yith-woocommerce-advanced-reviews.php:1754
 msgid "Author"
 msgstr "Autor"
 
@@ -50,100 +50,100 @@ msgstr "Valoración"
 msgid "Product"
 msgstr "Producto"
 
-#: includes/class.yith-advanced-reviews-list-table.php:343
-#: includes/class.yith-advanced-reviews-list-table.php:442
+#: includes/class.yith-advanced-reviews-list-table.php:346
+#: includes/class.yith-advanced-reviews-list-table.php:445
 msgid "Restore"
 msgstr "Restaurar"
 
-#: includes/class.yith-advanced-reviews-list-table.php:344
+#: includes/class.yith-advanced-reviews-list-table.php:347
 msgid "Move to bin"
 msgstr "Mover a la papelera"
 
-#: includes/class.yith-advanced-reviews-list-table.php:346
-#: includes/class.yith-advanced-reviews-list-table.php:447
+#: includes/class.yith-advanced-reviews-list-table.php:349
+#: includes/class.yith-advanced-reviews-list-table.php:450
 msgid "Delete permanently"
 msgstr "Borrar permanentemente"
 
-#: includes/class.yith-advanced-reviews-list-table.php:347
+#: includes/class.yith-advanced-reviews-list-table.php:350
 msgid "Approve reviews"
 msgstr "Aprobar reseñas"
 
-#: includes/class.yith-advanced-reviews-list-table.php:348
+#: includes/class.yith-advanced-reviews-list-table.php:351
 msgid "Unapprove reviews"
 msgstr "No aprobar reseñas"
 
-#: includes/class.yith-advanced-reviews-list-table.php:361
+#: includes/class.yith-advanced-reviews-list-table.php:364
 msgid "All"
 msgstr "Todos"
 
-#: includes/class.yith-advanced-reviews-list-table.php:362
-#: includes/class.yith-advanced-reviews-list-table.php:444
+#: includes/class.yith-advanced-reviews-list-table.php:365
+#: includes/class.yith-advanced-reviews-list-table.php:447
 msgid "Bin"
 msgstr "Papelera"
 
-#: includes/class.yith-advanced-reviews-list-table.php:363
+#: includes/class.yith-advanced-reviews-list-table.php:366
 msgid "Not approved"
 msgstr "No aprobado"
 
-#: includes/class.yith-advanced-reviews-list-table.php:419
+#: includes/class.yith-advanced-reviews-list-table.php:422
 msgid "[No Title]"
 msgstr "[Sin Título]"
 
-#: includes/class.yith-advanced-reviews-list-table.php:427
+#: includes/class.yith-advanced-reviews-list-table.php:430
 msgctxt "a link from a reply that points to the parent review"
 msgid "In reply to %s"
 msgstr "En respuesta a %s"
 
-#: includes/class.yith-advanced-reviews-list-table.php:442
+#: includes/class.yith-advanced-reviews-list-table.php:445
 msgid "Restore this item from the bin"
 msgstr "Restaurar este artículo desde la papelera"
 
-#: includes/class.yith-advanced-reviews-list-table.php:444
+#: includes/class.yith-advanced-reviews-list-table.php:447
 msgid "Move this item to the bin"
 msgstr "Mover este artículo a la papelera"
 
-#: includes/class.yith-advanced-reviews-list-table.php:447
+#: includes/class.yith-advanced-reviews-list-table.php:450
 msgid "Delete this item permanently"
 msgstr "Borrar este artículo permanentemente"
 
-#: includes/class.yith-advanced-reviews-list-table.php:463
+#: includes/class.yith-advanced-reviews-list-table.php:468
 #: templates/ywar-review.php:64
 msgid "Rated %d out of 5"
 msgstr "Valoración %d sobre 5"
 
-#: includes/class.yith-advanced-reviews-list-table.php:465
-#: includes/class.yith-woocommerce-advanced-reviews.php:1921
+#: includes/class.yith-advanced-reviews-list-table.php:469
+#: includes/class.yith-woocommerce-advanced-reviews.php:1970
 #: templates/ywar-review.php:66
 msgid "out of 5"
 msgstr "sobre 5"
 
-#: includes/class.yith-advanced-reviews-list-table.php:484
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1372
+#: includes/class.yith-advanced-reviews-list-table.php:488
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1366
 msgid "Edit"
 msgstr "Editar"
 
-#: includes/class.yith-advanced-reviews-list-table.php:487
+#: includes/class.yith-advanced-reviews-list-table.php:491
 msgid "View"
 msgstr "Vista"
 
-#: includes/class.yith-advanced-reviews-list-table.php:503
+#: includes/class.yith-advanced-reviews-list-table.php:507
 #: templates/ywar-review.php:40
 msgid "Anonymous"
 msgstr "Anónimo"
 
-#: includes/class.yith-advanced-reviews-list-table.php:514
+#: includes/class.yith-advanced-reviews-list-table.php:518
 msgid "Y/m/d g:i:s a"
 msgstr "Y/m/d g:i:s"
 
-#: includes/class.yith-advanced-reviews-list-table.php:521
+#: includes/class.yith-advanced-reviews-list-table.php:525
 msgid "%s ago"
 msgstr "%s hace"
 
-#: includes/class.yith-advanced-reviews-list-table.php:523
+#: includes/class.yith-advanced-reviews-list-table.php:527
 msgid "Y/m/d"
 msgstr "A/m/d"
 
-#: includes/class.yith-advanced-reviews-list-table.php:560
+#: includes/class.yith-advanced-reviews-list-table.php:564
 msgid "No reviews found."
 msgstr "No se encontraron reseñas."
 
@@ -178,10 +178,10 @@ msgid "Featured"
 msgstr "Destacados"
 
 #: includes/class.yith-woocommerce-advanced-reviews-premium.php:564
-#: includes/class.yith-woocommerce-advanced-reviews.php:321
-#: includes/class.yith-woocommerce-advanced-reviews.php:322
-#: includes/class.yith-woocommerce-advanced-reviews.php:343
-#: includes/class.yith-woocommerce-advanced-reviews.php:856
+#: includes/class.yith-woocommerce-advanced-reviews.php:325
+#: includes/class.yith-woocommerce-advanced-reviews.php:326
+#: includes/class.yith-woocommerce-advanced-reviews.php:347
+#: includes/class.yith-woocommerce-advanced-reviews.php:964
 #: templates/reports/class.ywar-review-report.php:137
 #: templates/ywar-product-reviews.php:42
 msgid "Reviews"
@@ -204,7 +204,7 @@ msgid "By max rate"
 msgstr "Por valoración máxima"
 
 #: includes/class.yith-woocommerce-advanced-reviews-premium.php:800
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2100
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2119
 msgid "Impossible to filter by rate"
 msgstr "Imposible filtrar por valoración"
 
@@ -226,90 +226,90 @@ msgid "Select/Deselect to block any reply of this review"
 msgstr ""
 "Seleccionar/Deseleccionar para bloquear cualquier respuesta a esta reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1225
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1219
 msgid "Flag as inappropriate content"
 msgstr "Marcar como contenido inapropiado"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1283
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1277
 msgid "Reply to a previous review"
 msgstr "Responder a una reseña previa"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1284
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1278
 msgid "Reply"
 msgstr "Responder"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1348
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1342
 msgid "This review cannot receive replies"
 msgstr "Esta reseña no puede recibir respuestas"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1348
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1342
 msgid "Block reply"
 msgstr "Bloquear respuesta"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1351
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1345
 msgid "This review cannot receive comments."
 msgstr "Esta reseña no puede recibir comentarios."
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1354
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1348
 msgid "Allow replies"
 msgstr "Permitir respuestas"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1354
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1348
 msgid "Allow reply"
 msgstr "Permitir respuesta"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1368
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1362
 msgid "Edit to a previous review"
 msgstr "Editar una reseña previa"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1472
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1479
 msgid "Was this review helpful to you?"
 msgstr "¿Te ha sido útil esta reseña?"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1473
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1480
 msgid "This reviews is helpful"
 msgstr "Esta reseña es útil"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1474
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1481
 msgid "This reviews is not helpful"
 msgstr "Esta reseña no es útil"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1501
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1508
 msgid "Most recent reviews"
 msgstr "Reseña más recientes"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1502
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1509
 msgid "Most helpful reviews"
 msgstr "Reseña más útiles"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1543
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1550
 msgid "Reviews with %s star"
 msgid_plural "Reviews with %s stars"
 msgstr[0] "Reseñas con %s estrella"
 msgstr[1] "Reseñas con %s estrellas"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1574
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2157
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1581
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2181
 msgid "star"
 msgid_plural "stars"
 msgstr[0] "estrella"
 msgstr[1] "estrellas"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1575
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1582
 msgid "%d reviews with rating of %s %s (%s of %s)"
 msgstr "%d reseñas con valoración %s %s (%s de %s)"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1577
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2171
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1584
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2195
 msgid "(Show unfiltered results)"
 msgstr "(Mostrar resultados sin filtrar)"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1633
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1640
 msgctxt "The user tried to upload more files than allowed."
 msgid "Too many files selected!"
 msgstr "¡Demasiados archivos seleccionados!"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1634
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1641
 msgctxt "The user tried to upload files with extension or size not allowed."
 msgid ""
 "One or more file was not accepted because do not match the expected "
@@ -318,62 +318,62 @@ msgstr ""
 "Uno o más archivos no fueron aceptados porque no coinciden con los "
 "requerimientos esperados"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1635
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1642
 msgctxt "No attachment is selected"
 msgid "No Files Selected"
 msgstr "Ningún archivo seleccionado"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1660
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1667
 msgid "Please, write a review"
 msgstr "Por favor, escribe una reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1661
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1668
 msgid "Please, select a rating before submitting your review"
 msgstr "Por favor, selecciona un valor antes de enviar tu reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1662
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1669
 msgid "Edit review"
 msgstr "Editar reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1663
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1670
 #: plugin-options/premium-options.php:113
 msgid "Reply to review"
 msgstr "Responder a una reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1664
-#: templates/ywar-product-reviews.php:77
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1671
+#: templates/ywar-product-reviews.php:76
 msgid "Add a review"
 msgstr "Añadir una reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1958
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:1976
 msgid "Thanks for your message, we will check the content of the review."
 msgstr "Gracias por tu mensaje, comprobaremos el contenido de la reseña."
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2022
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2040
 msgid "%s of %s people found this review helpful"
 msgstr "%s de %s personas encontraron esta reseña útil"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2069
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2088
 msgid "Product ID is not valid"
 msgstr "La ID del producto no es válida"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2077
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2205
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2096
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2229
 msgid "Product ID is in an invalid format"
 msgstr "la ID del producto tiene un formato inválido"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2162
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2186
 msgid "%d reviews with rate of %d %s (%d of %d)"
 msgstr "%d reseñas con valoración de %d %s (%d de %d)"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2500
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2536
 #: plugin-options/premium-options.php:67
 msgid ""
 "Only allow one review for a product. Require \"Only allow reviews from "
 "verified owners\" to be set to work properly"
 msgstr "Sólo se permite una reseña por producto."
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2529
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2565
 msgid ""
 "You can't add more than one review for this product. Would you like to edit "
 "the review you have already written?"
@@ -381,7 +381,7 @@ msgstr ""
 "No puedes añadir más de una reseña para este producto. ¿Quieres editar la "
 "reseña que ya has escrito?"
 
-#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2576
+#: includes/class.yith-woocommerce-advanced-reviews-premium.php:2612
 msgid ""
 "Bots are not allowed to submit comments. If you are not a bot then please "
 "enable JavaScript in browser."
@@ -416,37 +416,37 @@ msgid "Review %d contains personal data but could not be anonymized."
 msgstr ""
 "La valoración %d contiene datos personales pero pueden no ser anonimizados"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:285
+#: includes/class.yith-woocommerce-advanced-reviews.php:289
 msgid "Review title"
 msgstr "Título de la reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:539
+#: includes/class.yith-woocommerce-advanced-reviews.php:568
 msgid "Approve review"
 msgstr "Aprobar reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:539
+#: includes/class.yith-woocommerce-advanced-reviews.php:568
 msgid "Approve"
 msgstr "Aprobar"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:541
+#: includes/class.yith-woocommerce-advanced-reviews.php:570
 msgid "Unapprove review"
 msgstr "No aprobar reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:541
+#: includes/class.yith-woocommerce-advanced-reviews.php:570
 msgid "Unapprove"
 msgstr "No aprobar"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:611
+#: includes/class.yith-woocommerce-advanced-reviews.php:704
 msgid "Rated %s out of 5 stars"
 msgstr "Valorado en %s de 5 estrellas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:621
+#: includes/class.yith-woocommerce-advanced-reviews.php:714
 msgid " review"
 msgid_plural " reviews"
 msgstr[0] "reseña"
 msgstr[1] "reseñas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:656
+#: includes/class.yith-woocommerce-advanced-reviews.php:749
 msgid ""
 "YITH WooCommerce Advanced Reviews is available in an outstanding PREMIUM "
 "version with many new options, discover it now."
@@ -454,11 +454,11 @@ msgstr ""
 "YITH WooCommerce Advanced Reviews está disponible en una versión PREMIUM "
 "excepcional con muchas nuevas opciones, descúbrelo ahora."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:657
+#: includes/class.yith-woocommerce-advanced-reviews.php:750
 msgid "Premium version"
 msgstr "Versión premium"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:664
+#: includes/class.yith-woocommerce-advanced-reviews.php:757
 msgid ""
 "In YITH tab you can find YITH WooCommerce Advanced Reviews options. From "
 "this menu you can access all settings of YITH plugins activated."
@@ -467,7 +467,7 @@ msgstr ""
 "Advanced Reviews. Desde este menú puedes acceder a todos los demás ajustes "
 "de los plugins YITH activados."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:675
+#: includes/class.yith-woocommerce-advanced-reviews.php:768
 msgid ""
 "From now on, you can find all YITH WooCommerce Advanced Reviews options in "
 "YITH -> Advanced Reviews instead of WooCommerce -> Settings -> Advanced "
@@ -479,180 +479,180 @@ msgstr ""
 "Ajustes -> Advanced Reviews, como en la versión anterior. Siempre que uno de "
 "nuestros plugins sea actualizado, se añadirá una nueva entrada a este menú."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:711
+#: includes/class.yith-woocommerce-advanced-reviews.php:804
 msgid "General"
 msgstr "General"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:712
+#: includes/class.yith-woocommerce-advanced-reviews.php:805
 msgid "Layout"
 msgstr "Diseño"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:716
+#: includes/class.yith-woocommerce-advanced-reviews.php:809
 msgid "Voting/Review settings"
 msgstr "Ajustes de Votación/Reseñas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:718
+#: includes/class.yith-woocommerce-advanced-reviews.php:811
 msgid "Premium Version"
 msgstr "Versión Premium"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:724
-#: includes/class.yith-woocommerce-advanced-reviews.php:725
+#: includes/class.yith-woocommerce-advanced-reviews.php:817
+#: includes/class.yith-woocommerce-advanced-reviews.php:818
 msgid "Advanced Reviews"
 msgstr "Advanced Reviews"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:783
+#: includes/class.yith-woocommerce-advanced-reviews.php:876
 msgid "Too many files selected!"
 msgstr "¡Demasiados archivos seleccionados!"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:784
+#: includes/class.yith-woocommerce-advanced-reviews.php:877
 msgid "No Files Selected"
 msgstr "Ningún archivo seleccionado"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:854
+#: includes/class.yith-woocommerce-advanced-reviews.php:962
 msgctxt "Post Type General Name"
 msgid "Reviews"
 msgstr "Reseñas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:855
+#: includes/class.yith-woocommerce-advanced-reviews.php:963
 msgctxt "Post Type Singular Name"
 msgid "Review"
 msgstr "Reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:857
+#: includes/class.yith-woocommerce-advanced-reviews.php:965
 msgid "Parent Review"
 msgstr "Reseña Madre"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:858
+#: includes/class.yith-woocommerce-advanced-reviews.php:966
 msgid "All reviews"
 msgstr "Todas las reseñas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:859
+#: includes/class.yith-woocommerce-advanced-reviews.php:967
 msgid "View review"
 msgstr "Ver reseñas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:860
+#: includes/class.yith-woocommerce-advanced-reviews.php:968
 msgid "Add New Review"
 msgstr "Añadir Nueva Reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:861
+#: includes/class.yith-woocommerce-advanced-reviews.php:969
 msgid "Add New"
 msgstr "Añadir Nueva"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:862
+#: includes/class.yith-woocommerce-advanced-reviews.php:970
 msgid "Edit Review"
 msgstr "Editar Reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:863
+#: includes/class.yith-woocommerce-advanced-reviews.php:971
 msgid "Update Review"
 msgstr "Actualizar Reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:864
+#: includes/class.yith-woocommerce-advanced-reviews.php:972
 msgid "Search Review"
 msgstr "Buscar Reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:865
+#: includes/class.yith-woocommerce-advanced-reviews.php:973
 msgid "Not Found"
 msgstr "No encontrado"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:866
+#: includes/class.yith-woocommerce-advanced-reviews.php:974
 msgid "Not found in bin"
 msgstr "No encontrado en la papelera"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:872
+#: includes/class.yith-woocommerce-advanced-reviews.php:980
 msgid "YIT Product reviews"
 msgstr "YIT Product reviews"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:873
+#: includes/class.yith-woocommerce-advanced-reviews.php:981
 msgid "Advanced WooCommerce product reviews"
 msgstr "Advanced WooCommerce product reviews"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1444
+#: includes/class.yith-woocommerce-advanced-reviews.php:1490
 msgid "Your Rating"
 msgstr "Tu valoración"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1446
+#: includes/class.yith-woocommerce-advanced-reviews.php:1492
 msgid "Rate&hellip;"
 msgstr "Valoración&hellip"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1447
+#: includes/class.yith-woocommerce-advanced-reviews.php:1493
 msgid "Perfect"
 msgstr "Perfecto"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1448
+#: includes/class.yith-woocommerce-advanced-reviews.php:1494
 msgid "Good"
 msgstr "Bueno"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1449
+#: includes/class.yith-woocommerce-advanced-reviews.php:1495
 msgid "Average"
 msgstr "En la media"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1450
+#: includes/class.yith-woocommerce-advanced-reviews.php:1496
 msgid "Not that bad"
 msgstr "No está tan mal"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1451
+#: includes/class.yith-woocommerce-advanced-reviews.php:1497
 msgid "Very Poor"
 msgstr "Muy malo"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1460
+#: includes/class.yith-woocommerce-advanced-reviews.php:1506
 msgid "Attachments"
 msgstr "Adjuntos"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1461
+#: includes/class.yith-woocommerce-advanced-reviews.php:1507
 msgid "Choose file(s)"
 msgstr "Elegir archivo(s)"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1466
+#: includes/class.yith-woocommerce-advanced-reviews.php:1512
 msgid "Use one of the allowed file type: %s. "
 msgstr "Usar uno de los tipos de archivo permitidos: %s. "
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1470
+#: includes/class.yith-woocommerce-advanced-reviews.php:1516
 msgid "The max size allowed is : %s MB."
 msgstr "El tamaño máximo permitido es: %s MB."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1557
+#: includes/class.yith-woocommerce-advanced-reviews.php:1605
 msgid "Reviews (%d)"
 msgstr "Reseña (%d)"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1606
+#: includes/class.yith-woocommerce-advanced-reviews.php:1655
 msgid "Review information"
 msgstr "Información de la reseña"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1667
+#: includes/class.yith-woocommerce-advanced-reviews.php:1716
 msgid "Rating"
 msgstr "Clasificación"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1686
+#: includes/class.yith-woocommerce-advanced-reviews.php:1735
 msgid "Block review edit"
 msgstr "Bloquear editar valoración"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1692
+#: includes/class.yith-woocommerce-advanced-reviews.php:1741
 msgid "The review author is a registered user."
 msgstr "El autor de la reseña es un usuario registrado."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1693
+#: includes/class.yith-woocommerce-advanced-reviews.php:1742
 msgid "User profile"
 msgstr "Perfil de usuario"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1696
+#: includes/class.yith-woocommerce-advanced-reviews.php:1745
 msgid "Use user data"
 msgstr "Usa datos de usuario"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1713
+#: includes/class.yith-woocommerce-advanced-reviews.php:1762
 msgid "Author email"
 msgstr "Email del autor"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1918
-#: templates/ywar-rating.php:25
+#: includes/class.yith-woocommerce-advanced-reviews.php:1967
+#: templates/ywar-rating.php:29
 msgid "Rated %s out of 5"
 msgstr "Valorado en %s sobre 5"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1941
-#: includes/class.yith-woocommerce-advanced-reviews.php:1947
+#: includes/class.yith-woocommerce-advanced-reviews.php:1990
+#: includes/class.yith-woocommerce-advanced-reviews.php:1996
 msgid "Convert reviews"
 msgstr "Convertir reseñas"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1950
+#: includes/class.yith-woocommerce-advanced-reviews.php:1999
 msgid ""
 "If this is the first time you install the YITH Advanced Reviews plugin, or "
 "if you are using an older version prior to the 1.1.0, first you have to "
@@ -662,26 +662,26 @@ msgstr ""
 "estás usando una versión anterior a la 1.1.0, primero tienes que convertir "
 "las reseñas antiguas, si quieres usarlas."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1957
+#: includes/class.yith-woocommerce-advanced-reviews.php:2006
 msgctxt "convert into reviews"
 msgid "CONVERTING COMMENTS INTO REVIEWS"
 msgstr "CONVERTIR COMENTARIOS EN VALORACIONES"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1960
+#: includes/class.yith-woocommerce-advanced-reviews.php:2009
 msgctxt "convert into reviews"
 msgid "comments checked"
 msgstr "comentarios marcados"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1963
+#: includes/class.yith-woocommerce-advanced-reviews.php:2012
 msgctxt "convert into reviews"
 msgid "comments converted"
 msgstr "comentarios convertidos"
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1990
+#: includes/class.yith-woocommerce-advanced-reviews.php:2039
 msgid "Task completed. %d reviews have been processed and converted."
 msgstr "Tarea completada. %d reseñas han sido procesadas y convertidas."
 
-#: includes/class.yith-woocommerce-advanced-reviews.php:1992
+#: includes/class.yith-woocommerce-advanced-reviews.php:2041
 msgid "Task completed. No review to convert has been found."
 msgstr "Tarea completada. No se ha encontrado ninguna reseña para convertir."
 
@@ -1050,56 +1050,56 @@ msgid_plural "%s reviews for %s"
 msgstr[0] "%s reseña para %s"
 msgstr[1] "%s reseñas para%s"
 
-#: templates/ywar-product-reviews.php:60
+#: templates/ywar-product-reviews.php:59
 msgid "There are no reviews yet."
 msgstr "Todavía no hay ninguna reseña."
 
-#: templates/ywar-product-reviews.php:77
+#: templates/ywar-product-reviews.php:76
 msgid "Be the first to review"
 msgstr "Sé el primero en escribir una reseña"
 
-#: templates/ywar-product-reviews.php:78
+#: templates/ywar-product-reviews.php:77
 msgid "Write a reply"
 msgstr "Escribe una respuesta"
 
-#: templates/ywar-product-reviews.php:82
+#: templates/ywar-product-reviews.php:81
 msgid "Name"
 msgstr "Nombre"
 
-#: templates/ywar-product-reviews.php:84
+#: templates/ywar-product-reviews.php:83
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: templates/ywar-product-reviews.php:87
+#: templates/ywar-product-reviews.php:86
 msgid "Submit"
 msgstr "Enviar"
 
-#: templates/ywar-product-reviews.php:92
+#: templates/ywar-product-reviews.php:91
 msgid "Your Review"
 msgstr "Tu Reseña"
 
-#: templates/ywar-product-reviews.php:103
+#: templates/ywar-product-reviews.php:102
 msgid ""
 "Only logged in customers who have purchased this product may write a review."
 msgstr ""
 "Sólo los clientes registrados que han comprado este producto pueden escribir "
 "una reseña."
 
-#: templates/ywar-product-reviews.php:106
+#: templates/ywar-product-reviews.php:105
 msgid "Edit my reviews"
 msgstr "Editar mis reseñas"
 
-#: templates/ywar-rating.php:27
+#: templates/ywar-rating.php:31
 msgid "out of %s5%s"
 msgstr "sobre %s5%s"
 
-#: templates/ywar-rating.php:28
+#: templates/ywar-rating.php:32
 msgid "based on %s customer rating"
 msgid_plural "based on %s customer ratings"
 msgstr[0] "basado en %s valoración de clientes"
 msgstr[1] "basado en %s valoración de clientes"
 
-#: templates/ywar-rating.php:33
+#: templates/ywar-rating.php:37
 msgid "%s customer review"
 msgid_plural "%s customer reviews"
 msgstr[0] "%s reseña de cliente"

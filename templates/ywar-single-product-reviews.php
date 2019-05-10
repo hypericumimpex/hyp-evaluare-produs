@@ -12,7 +12,7 @@ $product_id = yit_get_prop( $product, 'id' );
 
 <div id="ywar_reviews">
 	<div id="reviews_summary">
-		<h3><?php echo apply_filters( 'ywar_reviews_summary_title',__( "Customer reviews", 'yith-woocommerce-advanced-reviews' )); ?></h3>
+		<h3><?php echo apply_filters( 'ywar_reviews_summary_title', __( "Customer reviews", 'yith-woocommerce-advanced-reviews' )); ?></h3>
 
 		<?php do_action( 'ywar_summary_prepend', $product, $review_stats ) ?>
 

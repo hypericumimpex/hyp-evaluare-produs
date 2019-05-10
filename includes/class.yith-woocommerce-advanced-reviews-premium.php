@@ -1404,16 +1404,29 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
         }
 
         if ( $this->enable_attachments ) {
-            $review_thumbnails = get_post_meta( $review->ID, YITH_YWAR_META_THUMB_IDS, true );
-            if ( isset ( $review_thumbnails ) && is_array( $review_thumbnails ) && ( count( $review_thumbnails ) > 0 ) ) {
-                $thumbnail_div = '<div class="ywar-review-thumbnails review_thumbnail horizontalRule">';
-                foreach ( $review_thumbnails as $thumb_id ) {
-                    $file_url    = wp_get_attachment_url( $thumb_id );
-                    $image_thumb = wp_get_attachment_image_src( $thumb_id, array( 100, 100 ), true );
 
-                    $thumbnail_div .= "<a href='$file_url' data-rel=\"prettyPhoto[review-gallery-{$review->ID}]\"><img class=\"ywar_thumbnail\" src='{$image_thumb[0]}' width='70px' height='70px'></a>";
+            $review_thumbnails = get_post_meta( $review->ID, YITH_YWAR_META_THUMB_IDS, true );
+
+            if ( isset ( $review_thumbnails ) && is_array( $review_thumbnails ) && ( count( $review_thumbnails ) > 0 ) ) {
+
+                $thumbnail_div = '<div class="ywar-review-thumbnails review_thumbnail horizontalRule">';
+
+                foreach ( $review_thumbnails as $thumb_id ) {
+
+                    if ( is_int($thumb_id)) {
+
+                        $file_url = wp_get_attachment_url($thumb_id);
+
+                        $image_thumb = wp_get_attachment_image_src($thumb_id, array(100, 100), true);
+
+                        $thumbnail_div .= "<a href='$file_url' data-rel=\"prettyPhoto[review-gallery-{$review->ID}]\"><img class=\"ywar_thumbnail\" src='{$image_thumb[0]}' width='70px' height='70px'></a>";
+                    }
+                    else{
+                        $thumbnail_div = "<a></a>";
+                    }
                 }
                 $thumbnail_div .= '</div>';
+
             }
         }
 
@@ -1660,7 +1673,7 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
                     ( 'yes' === get_option( 'woocommerce_review_rating_required' ) ),
                 'tab_selector'          => get_option( 'ywar_tab_selector', '#tab-reviews' ),
             ) );
-            
+
         if ( $this->recaptcha_enabled === 'yes' ) {
             //  Enqueue reCaptcha script on need
             wp_enqueue_script(
@@ -1798,12 +1811,12 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
         ob_end_clean();
 
 
-		if ( get_option( "ywar_enable_recaptcha" ) == "yes" && get_option( "ywar_recaptcha_site_key" ) != '' && get_option( "ywar_recaptcha_secret_key" ) != '' && (!is_admin()) ) {
-			/** Check the recaptcha, if used */
-			add_filter( 'comment_form_submit_button', array( $this, 'display_comment_recaptcha' ) );
+        if ( get_option( "ywar_enable_recaptcha" ) == "yes" && get_option( "ywar_recaptcha_site_key" ) != '' && get_option( "ywar_recaptcha_secret_key" ) != '' && (!is_admin()) ) {
+            /** Check the recaptcha, if used */
+            add_filter( 'comment_form_submit_button', array( $this, 'display_comment_recaptcha' ) );
 
-			add_filter( 'preprocess_comment', array( $this, 'verify_comment_captcha' ),5 );
-		}
+            add_filter( 'preprocess_comment', array( $this, 'verify_comment_captcha' ),5 );
+        }
 
 
 
@@ -2264,7 +2277,7 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
     public function reviews_list( $product_id, $args = null, $show_featured = false ) {
 
 
-        $args['numberposts'] = isset($args['numberposts']) ? $args['numberposts'] : '';
+        $args['numberposts'] = isset($args['numberposts']) && $args['numberposts'] != 0 ? $args['numberposts'] : -1;
         $args[ 'offset' ]    = isset($args[ 'offset' ]) ? $args[ 'offset' ] : '';
         $args['orderby']     = isset($args['orderby']) ? $args['orderby'] : '';
         $args['order']       = isset($args['order']) ? $args['order'] : '';
@@ -2281,7 +2294,7 @@ class YITH_WooCommerce_Advanced_Reviews_Premium extends YITH_WooCommerce_Advance
             'post_parent'      => 0,
             'meta_query'       => $args['meta_query'],
         );
-        
+
         $reviews_aux = get_posts( $args);
         $args['offset'] = !empty($args['offset']) ? $args['offset'] : 0;
 
